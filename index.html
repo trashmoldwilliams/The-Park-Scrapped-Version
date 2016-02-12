@@ -11,16 +11,18 @@
   <body>
     <div class="container">
       <div id="gameLogContainer">
-
         <div id="gameLog" class="window">
-
+          <ul id="gameLogContent">
+          <ul>
         </div>
       </div>
+
       <div id="viewport">
         <div id="mapContainer">
 
         </div>
       </div>
+
       <div id="controls">
         <div id="hud" class="row">
           <div class="col-md-2">
@@ -57,28 +59,89 @@
             </button>
           </div>
         </div>
-        <div id="generalMenu" class="menu window">
-          <div class="row">
-            <div class="col-md-4 menuOptions">
-              <span>TOOLS</span>
-              <span>ITEMS</span>
+        <div id="menu" class="menu window">
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#toolMenu">TOOLS</a></li>
+            <li><a data-toggle="tab" href="#physicalMenu">PHYSICAL</a></li>
+            <li><a data-toggle="tab" href="#mentalMenu">MENTAL</a></li>
+            <li><a data-toggle="tab" href="#itemMenu">INVENTORY</a></li>
+            <li><a data-toggle="tab" href="#statMenu">STATS</a></li>
+            <li><a data-toggle="tab" href="#moveMenu">MOVE</a></li>
+          </ul>
+          <div class="subMenu tab-content">
+            <div id="toolMenu" class="tab-pane active">
+              <div id="toolMenuDefault">
+                <div class="row">
+                  <div id="leftHand" class="col-md-6">
+                    <div>
+                      <span id="leftToolName"></span>
+                    </div>
+                    <ul id="leftHandAbilities">
+                    </ul>
+                  </div>
+                  <div id="rightHand" class="col-md-6">
+                    <div>
+                      <span id="rightToolName"></span>
+                    </div>
+                    <ul id="rightHandAbilities">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="toolMenuTwoHand">
+                <ul id="twoHandTool">
+                </ul>
+              </div>
             </div>
-            <div class="col-md-4 menuOptions">
-              <span>PHYSICAL</span>
-              <span>MENTAL</span>
+            <div id="physicalMenu" class="tab-pane">
+              <div id="leftPhysical">
+                <ul id="leftPhysicalAbilities">
+                </ul>
+              </div>
+              <div id="rightPhysical">
+                <ul id="rightPhysicalAbilities">
+                </ul>
+              </div>
             </div>
-            <div class="col-md-4 menuOptions">
-              <span>STATS</span>
-              <span>MOVE</span>
+            <div id="mentalMenu" class="tab-pane">
+              <div id="leftMental">
+                <ul id="rightMentalAbilities">
+                </ul>
+              </div>
+              <div id="rightMental">
+                <ul id="leftMentalAbilities">
+                </ul>
+              </div>
+            </div>
+            <div id="inventoryMenu" class="tab-pane">
+              <div id="leftInventory">
+                <ul id="leftInventoryList">
+                </ul>
+              </div>
+              <div id="rightInventory">
+                <ul id="rightInventoryList">
+                </ul>
+              </div>
+            </div>
+            <div id="statMenu" class="tab-pane">
+              <h3>HOME</h3>
+              <p>Some content.</p>
+            </div>
+            <div id="mental" class="tab-pane">
+              <div id="movementOptions">
+                <ul id="movementOptionsList">
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="toolMenu" class="sub menu window">
 
         </div>
+
         <div id="combatDocket" class="menu window">
-
+          <ol id="combatDocketLineup">
+          </ol>
         </div>
+
       </div>
     </div>
   </body>

@@ -31,6 +31,7 @@ body {
 	width: 100%;
 	height: 400px;
 	background-color: #ffffcc;
+	position: relative;
 }
 
 #controls {
@@ -51,7 +52,15 @@ body {
 }
 
 #mapContainer {
-
+	background-color: #99ccff;
+	width: 125px;
+	height: 125px;
+	border-radius: 10px;
+	position: absolute;
+	margin-right: 1%;
+	margin-bottom: 1%;
+  bottom: 0;
+	right: 0;
 }
 
 #confirmCombat {
@@ -61,25 +70,35 @@ body {
 	padding-right: 40px;
 }
 
-.menu {
+.subMenu {
+	width: 100%;
+	height: 158px;
+	overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#toolMenuTwoHand {
+	display: none;
+}
+
+.nav-tabs > li > a {
+	border-radius: 0px;
+}
+
+a {
+	color: grey;
+}
+
+a:hover {
+	color: grey;
+}
+
+#menu {
+	height: 230px;
 	width: 60%;
 	margin-top: 6%;
 	margin-left: 3%;
 	float: left;
-}
-
-.sub {
-	height: 230px;
-	overflow-y: scroll;
-}
-
-#generalMenu {
-	display: none;
-	height: 140px;
-}
-
-#toolMenu {
-	/*display: none;*/
 }
 
 #itemMenu {
