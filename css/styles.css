@@ -1,0 +1,51 @@
+#viewport {
+	background-color: red;
+	height: 400px;
+	width: 100%;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+#gameLog {
+	background-color: green;
+	height: 120px;
+	width: 60%;
+	margin: 0 auto;
+}
+
+#hud {
+	background-color: black;
+	height: 50px;
+	width: 100%;
+}
+
+#controls {
+	background-color: blue;
+	height: 250px;
+	width: 100%;
+	padding-top: 10px;
+}
+
+#menuContainer {
+	background-color: orange;
+	height: 230px;
+	width: 45%;
+	margin-left: 1%;
+	margin-right: 1%;
+	float: left;
+}
+
+.docket {
+	background-color: orange;
+	height: 230px;
+	width: 15%;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	text-align: center;
+}
+
+.docketConfirmation {
+	margin-top: 190px;
+	bottom: 0;
+}
