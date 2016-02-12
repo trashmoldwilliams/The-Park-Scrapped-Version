@@ -10,19 +10,75 @@
   </head>
   <body>
     <div class="container">
-      <div id="menus">
-        <div id="generalMenu" class="window">
+      <div id="gameLogContainer">
 
-        </div>
         <div id="gameLog" class="window">
 
         </div>
       </div>
       <div id="viewport">
+        <div id="mapContainer">
 
+        </div>
       </div>
-      <div id="hud">
+      <div id="controls">
+        <div id="hud" class="row">
+          <div class="col-md-2">
+            <span>
+              HP: <span id="currentPlayerHP"></span>
+              <span> / </span>
+              <span id="maxPlayerHP"></span>
+            </span>
+          </div>
+          <div class="col-md-2">
+            <span>
+              AP: <span id="currentPlayerAP"></span>
+              <span> / </span>
+              <span id="maxPlayerAP"></span>
+            </span>
+          </div>
+          <div class="col-md-2">
+            <span>
+              MP: <span id="currentPlayerMP"></span>
+              <span> / </span>
+              <span id="maxPlayerMP"></span>
+            </span>
+          </div>
+          <div class="col-md-2">
+            <span>
+              SP: <span id="currentPlayerSP"></span>
+              <span> / </span>
+              <span id="maxPlayerSP"></span>
+            </span>
+          </div>
+          <div class="col-md-4">
+            <button id="confirmCombat">
+              COMBAT
+            </button>
+          </div>
+        </div>
+        <div id="generalMenu" class="menu window">
+          <div class="row">
+            <div class="col-md-4 menuOptions">
+              <span>TOOLS</span>
+              <span>ITEMS</span>
+            </div>
+            <div class="col-md-4 menuOptions">
+              <span>PHYSICAL</span>
+              <span>MENTAL</span>
+            </div>
+            <div class="col-md-4 menuOptions">
+              <span>STATS</span>
+              <span>MOVE</span>
+            </div>
+          </div>
+        </div>
+        <div id="toolMenu" class="sub menu window">
 
+        </div>
+        <div id="combatDocket" class="menu window">
+
+        </div>
       </div>
     </div>
   </body>
