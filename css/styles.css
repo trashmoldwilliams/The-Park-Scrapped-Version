@@ -101,24 +101,28 @@ a:hover {
 	float: left;
 }
 
+#toolMenu {
+	background-color: red;
+}
+
 #itemMenu {
-	display: none;
+	background-color: green;
 }
 
 #physicalMenu {
-	display: none;
+	background-color: red;
 }
 
 #mentalMenu {
-	display: none;
+	background-color: green;
 }
 
 #statMenu {
-	display: none;
+	background-color: red;
 }
 
 #moveMenu {
-	display: none;
+	background-color: green;
 }
 
 #combatDocket {

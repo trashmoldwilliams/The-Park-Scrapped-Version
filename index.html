@@ -54,7 +54,7 @@
             </span>
           </div>
           <div class="col-md-4">
-            <button id="confirmCombat">
+            <button id="confirmCombat" class="btn disabled">
               COMBAT
             </button>
           </div>
@@ -93,7 +93,8 @@
                 </ul>
               </div>
             </div>
-            <div id="physicalMenu" class="tab-pane">
+
+            <div id="physicalMenu" class="tab-pane active">
               <div id="leftPhysical">
                 <ul id="leftPhysicalAbilities">
                 </ul>
@@ -103,6 +104,7 @@
                 </ul>
               </div>
             </div>
+
             <div id="mentalMenu" class="tab-pane">
               <div id="leftMental">
                 <ul id="rightMentalAbilities">
@@ -113,6 +115,7 @@
                 </ul>
               </div>
             </div>
+
             <div id="inventoryMenu" class="tab-pane">
               <div id="leftInventory">
                 <ul id="leftInventoryList">
@@ -123,9 +126,19 @@
                 </ul>
               </div>
             </div>
+
             <div id="statMenu" class="tab-pane">
-              <h3>HOME</h3>
-              <p>Some content.</p>
+              <div id="equips">
+
+              </div>
+              <div id="leftStats">
+                <ul id="leftStatList">
+                </ul>
+              </div>
+              <div id="rightStats">
+                <ul id="rightStatList">
+                </ul>
+              </div>
             </div>
             <div id="mental" class="tab-pane">
               <div id="movementOptions">
@@ -134,14 +147,12 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <div id="combatDocket" class="menu window">
           <ol id="combatDocketLineup">
           </ol>
         </div>
-
       </div>
     </div>
   </body>
