@@ -77,9 +77,7 @@ body {
   overflow-x: hidden;
 }
 
-#toolMenuTwoHand {
-	display: none;
-}
+
 
 .nav-tabs > li > a {
 	border-radius: 0px;
@@ -102,27 +100,31 @@ a:hover {
 }
 
 #toolMenu {
-	background-color: red;
+
 }
 
-#itemMenu {
-	background-color: green;
+#toolMenuTwoHand {
+	display: none;
+}
+
+#inventoryMenu {
+
 }
 
 #physicalMenu {
-	background-color: red;
+
 }
 
 #mentalMenu {
-	background-color: green;
+
 }
 
 #statMenu {
-	background-color: red;
+
 }
 
 #moveMenu {
-	background-color: green;
+
 }
 
 #combatDocket {
