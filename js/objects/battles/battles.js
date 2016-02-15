@@ -15,7 +15,6 @@ function Battle(EnemyCharacter, Weather, Temperature) {
 $(".ability").click(function() {
 	if (battleState === "turnExecution") {
 		ability = event.target.id;
-		
 
 		if (ability.abilityType === "strategic") {
 			ability.StrategicAbility.execute;
@@ -37,10 +36,22 @@ $(".ability").click(function() {
 
 //Turn Execution
 
+$(".confirmCombat").click(function() {
+	currentBattle.executeTurn();
+});
+
 Battle.prototype.executeTurn = function() {
 	battleState = "turnExecution";
-
 	var isFirst = isFirst(PlayerCharacter.Stats.ApproximateStats.MaxAP, this.EnemyCharacter.Stats.ApproximateStats.MaxAP);
+	var isSecond = isSecond(isFirst);
+
+	for (var i = 0; i <= [isFirst]CombatDocket; i++) {
+		[isFirst]CombatDocket[i].CombatAbility.execute();
+	}
+
+	for (var i = 0; i <= [isSecond]CombatDocket; i++) {
+		[isSecond]CombatDocket[i].CombatAbility.execute();
+	}
 	
 	battleState = "turnSetup";
 };
@@ -55,5 +66,17 @@ function isFirst(PlayerMaxAP, EnemyMaxAP) {
 		return "enemy";
 	} else {
 		return "tie";
+	}
+}
+
+function isSecond(isFirst) {
+	if (isFirst === "tie") {
+		return "N/A";
+
+	}else if (isFirst === "player") {
+		return "enemy";
+
+	} else {
+		return "player";
 	}
 }
