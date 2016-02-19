@@ -1,4 +1,4 @@
-function Character(name, level, alignment, Sprites, Stats, Abilities, Inventory, Body, Loadout) {
+function Character(name, level, alignment, Sprites, Stats, abilities, Inventory, Body, Loadout) {
 	this.name = name;
 	this.level = level;
 	this.alignment = alignment;
@@ -9,4 +9,3 @@ function Character(name, level, alignment, Sprites, Stats, Abilities, Inventory,
 	this.Body = Body;
 	this.Loadout = Loadout;
 }
-
